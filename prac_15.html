@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM</title>
+</head>
+<body>
+
+<h2 id="h">Hello</h2>
+<p class="p">Text</p>
+<button onclick="change()">Change</button>
+
+<script>
+function change() {
+    document.getElementById("h").innerHTML = "Changed by ID";
+    document.querySelector(".p").innerHTML = "Changed by Query";
+}
+</script>
+
+</body>
+</html>

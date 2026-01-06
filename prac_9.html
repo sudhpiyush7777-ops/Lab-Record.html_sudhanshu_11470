@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Web Page</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background:#333;
+    color:#fff;
+    text-align:center;
+    padding:1rem;
+}
+
+.container{
+    padding:1rem;
+}
+
+.card{
+    background:#f2f2f2;
+    padding:1rem;
+    margin:1rem 0;
+    border-radius:0.5rem;
+}
+
+@media (min-width: 600px){
+    .container{
+        display:flex;
+        gap:1rem;
+    }
+    .card{
+        flex:1;
+        margin:0;
+    }
+}
+
+@media (min-width: 900px){
+    body{
+        font-size:1.1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Responsive Design</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Mobile First</h2>
+        <p>This layout is designed for mobile devices first.</p>
+    </div>
+
+    <div class="card">
+        <h2>Flexible Units</h2>
+        <p>Using rem, %, and flexible layouts.</p>
+    </div>
+
+    <div class="card">
+        <h2>Media Queries</h2>
+        <p>Layout changes on larger screens.</p>
+    </div>
+</div>
+
+</body>
+</html>

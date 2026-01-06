@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Selectors Demo</title>
+
+<style>
+*{
+    font-family: Arial, sans-serif;
+}
+
+#main{
+    border: 3px solid #333;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box{
+    background-color:bisque;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.box p{
+    color: #0066cc;
+    font-size: 16px;
+}
+
+h1, h2, p{
+    margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="main">
+    <h1>CSS Selectors</h1>
+
+    <div class="box">
+        <h2>Class Selector</h2>
+        <p>This paragraph is styled using descendant selector.</p>
+    </div>
+
+    <div class="box">
+        <h2>ID Selector</h2>
+        <p>The main container uses ID selector.</p>
+    </div>
+</div>
+
+</body>
+</html>

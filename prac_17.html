@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Listener</title>
+</head>
+<body>
+
+<button id="btn">Click Me</button>
+<input type="text" id="inp" placeholder="Type here">
+
+<script>
+var b = document.getElementById("btn");
+var i = document.getElementById("inp");
+
+function mouseClick() {
+    alert("Mouse Click Event");
+}
+
+b.addEventListener("click", mouseClick);
+
+i.addEventListener("keydown", function() {
+    alert("Keyboard Event");
+});
+
+setTimeout(function() {
+    b.removeEventListener("click", mouseClick);
+}, 5000);
+</script>
+
+</body>
+</html>

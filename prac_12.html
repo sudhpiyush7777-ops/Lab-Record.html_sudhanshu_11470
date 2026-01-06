@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Functions and Scope</title>
+</head>
+
+<body>
+
+<script>
+function calculate(a, b){
+    var sum = a + b;
+    let sub = a - b;
+    const mul = a * b;
+
+    document.write("Sum is = " + sum + "<br>");
+    document.write("Subtraction is = " + sub + "<br>");
+    document.write("Multiplication is = " + mul + "<br>");
+}
+
+calculate(10, 5);
+
+var x = 10;
+let y = 20;
+const z = 30;
+
+document.write("<br>Global var x = " + x);
+document.write("<br>Global let y = " + y);
+document.write("<br>Global const z = " + z);
+</script>
+
+</body>
+</html>
